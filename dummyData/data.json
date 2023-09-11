@@ -1,0 +1,23 @@
+[
+  {
+    "id": "0720d081-ad59-469a-86fd-896b0dff1acf",
+    "title": "Hello brother",
+    "year": 2011,
+    "genre": "fun",
+    "ratings": 4.2
+  },
+  {
+    "id": "8ffdc0ce-86ce-4e60-af71-fc60db437263",
+    "title": "The Godfather 2",
+    "year": 1974,
+    "genre": "Crime",
+    "ratings": 4.9
+  },
+  {
+    "id": "a39032fc-3046-4e99-97cf-7351f56f481f",
+    "title": "The Godfather 3",
+    "year": 1990,
+    "genre": "Crime",
+    "ratings": 4.1
+  }
+]

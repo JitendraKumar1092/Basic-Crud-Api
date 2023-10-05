@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-crud-api-project",
+  "name": "data-master-api",
   "version": "1.0.0",
   "description": "This is vanilla nodejs CRUD API project",
   "main": "server.js",
@@ -8,7 +8,7 @@
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
-  "author": "Dipesh Malvia",
+  "author": "Jitendra Kumar",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.20"

@@ -1,9 +1,11 @@
 const fs = require("fs");
 const path = require("path");
+
 module.exports = (data) => {
+  console.log("the data to wrtie in file :", data);
   try {
     fs.writeFileSync(
-      "/home/pattrick/Desktop/Workspace/webdev/NodeJS/crud_api_project/dummyData/data.json", 
+      path.join(__dirname, "..", "data", "movies.json"),
       JSON.stringify(data),
       "utf-8"
     );

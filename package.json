@@ -1,17 +1,19 @@
 {
-  "name": "crud_api_project",
+  "name": "nodejs-crud-api-project",
   "version": "1.0.0",
-  "description": "simple project a vanilla node js crud api project",
+  "description": "This is vanilla nodejs CRUD API project",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
-  "author": "Ig Pattrick",
+  "author": "Dipesh Malvia",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
   "dependencies": {
-    "crypto": "^1.0.1",
-    "dotenv": "^16.3.1",
-    "nodemon": "^3.0.1"
+    "dotenv": "^16.0.2"
   }
 }

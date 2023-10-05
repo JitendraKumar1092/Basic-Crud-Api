@@ -1,12 +1,13 @@
 const http = require("http");
-const getReq = require("./methods/getRequest");
-const putReq = require("./methods/putRequest");
-const postReq = require("./methods/postRequest");
-const deleteReq = require("./methods/deleteRequest");
-let movies = require("./dummyData/data.json");
-// hello from the other side
-require("dotenv").config();
-const port = process.env.PORT || 5001;
+const getReq = require("./methods/get-request");
+const postReq = require("./methods/post-request");
+const putReq = require("./methods/put-request");
+const deleteReq = require("./methods/delete-request");
+let movies = require("./data/movies.json");
+//require("dotenv").config();
+
+const PORT = process.env.PORT || 5001;
+
 const server = http.createServer((req, res) => {
   req.movies = movies;
   switch (req.method) {
@@ -26,11 +27,12 @@ const server = http.createServer((req, res) => {
       res.statusCode = 404;
       res.setHeader("Content-Type", "application/json");
       res.write(
-        JSON.stringify({ title: " not found", message: "Route not found" })
+        JSON.stringify({ title: "Not Found", message: "Route not found" })
       );
       res.end();
   }
 });
-server.listen(port, () => {
-  console.log(`server started on port ${port}`);
+
+server.listen(PORT, () => {
+  console.log(`Server started on port : ${PORT}`);
 });

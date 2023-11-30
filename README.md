@@ -1,5 +1,4 @@
-# Vanilla Nodejs RestFul CRUD API Project | No Framework or Library
-> This is Node.js CRUD API movie project.
+
 
 ## Routes
 ```bash
